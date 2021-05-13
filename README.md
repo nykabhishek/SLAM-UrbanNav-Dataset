@@ -62,15 +62,15 @@ UrbanNav is an Open-Sourcing Localization Dataset Collected in Asian Urban Canyo
   3. Download [rosbag file](https://www.dropbox.com/s/3mtlncglrv7p39l/2020-03-14-16-45-35.bag.tar.gz?dl=0) for the UrbanNav dataset.
   4. Run the following commands via terminal:
    
-    $ roslaunch aloam_velodyne aloam_velodyne_VLP_16.launch
+    roslaunch aloam_velodyne aloam_velodyne_VLP_16.launch
     
-    $ rosbag play 2020-03-14-16-45-35.bag
+    rosbag play 2020-03-14-16-45-35.bag
     
-    $ python sensor_fusion_urbannav.py
+    python sensor_fusion_urbannav.py
 
   5. The filtered odometry information of the vehicle can be accesses using
    
-        > rostopic echo /ekf_odometry
+    rostopic echo /ekf_odometry
 
 ## Results:
 
@@ -105,4 +105,4 @@ UrbanNav is an Open-Sourcing Localization Dataset Collected in Asian Urban Canyo
 
 
 ## Limitations:
-    The filter has not been tuned to predict position, velocity and acceleration along z-axis (altitude). 
+   The filter has not been tuned to predict position, velocity and acceleration along z-axis (altitude). 
