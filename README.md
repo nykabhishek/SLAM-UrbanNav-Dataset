@@ -1,4 +1,4 @@
-# Simulataneous Localization and Mapping (SLAM) in a crowded urban environment by fusing Lidar, IMU, GPS, Odometry and SPAN-CPT data.
+# Simultaneous Localization and Mapping (SLAM) in a crowded urban environment by fusing Lidar, IMU, GPS, Odometry and SPAN-CPT data.
 
 ## Kalman Filter details:
 
