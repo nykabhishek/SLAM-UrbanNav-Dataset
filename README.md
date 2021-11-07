@@ -1,16 +1,20 @@
-# Simultaneous Localization and Mapping (SLAM) in a crowded urban environment by fusing Lidar, IMU, GPS, Odometry and SPAN-CPT data.
+# Simultaneous Localization and Mapping (SLAM) in crowded urban environments by fusing Lidar, IMU, GPS, Odometry, and SPAN-CPT data.
 
 ## Kalman Filter details:
 
   - Number of states tracked: 13 
   - (3 positions, 3 velocities, 3 accelerations and 4 quaternion orientations)
   - State Vector: [x, y, z, vx, vy, vz, ax, ay, az, qx, qy, qz, qw]
+    - Position states : (x, y, z)
+    - Velocity States : (vx, vy, vz)
+    - Acceleration States : (ax, ay, az)
+    - Quaternion States: (qx, qy, qz, qw)
 
 ## Data used:
 
 ### [UrbanNav Dataset](https://www.polyu-ipn-lab.com/download) Details 
 
-UrbanNav is an Open-Sourcing Localization Dataset Collected in Asian Urban Canyons, including Tokyo and Hong Kong. It was mainly developed to aid in solving the challenging problem of positioning and localization in deep urban canyons using low-cost sensors. The accuracy of GNSS is severely challenged in urban canyons due to the high-rising buildings, leading to numerous Non-line-of-sight (NLOS) receptions and multipath effects. Moreover, the excessive dynamic objects can also distort the performance of LiDAR, and camera. The dataset includes sensor measurements from GNSS receiver, LiDAR, camera and IMU, together with accurate ground truth from [SPAN-CPT](https://novatel.com/products/span-gnss-inertial-navigation-systems) system. 
+UrbanNav is an Open-Sourcing Localization Dataset collected in Asian Urban Canyons, including Tokyo and Hong Kong. The dataset was developed to aid in solving the challenging problem of positioning and localization in deep urban canyons using low-cost sensors. The accuracy of GNSS is severely challenged in urban canyons due to the high-rising buildings, leading to numerous Non-line-of-sight (NLOS) receptions and multipath effects. Moreover, the excessive dynamic objects can also distort the performance of LiDAR and the camera. The dataset includes sensor measurements from GNSS receiver, LiDAR, camera, and IMU, together with accurate ground truth from [SPAN-CPT](https://novatel.com/products/span-gnss-inertial-navigation-systems) system. 
 
 ### Hong Kong Dataset
 1. **Sensor Setups**
@@ -68,7 +72,7 @@ UrbanNav is an Open-Sourcing Localization Dataset Collected in Asian Urban Canyo
     
     python sensor_fusion_urbannav.py
 
-  5. The filtered odometry information of the vehicle can be accesses using
+  5. The filtered odometry information of the vehicle can be accessed using
    
     rostopic echo /ekf_odometry
 
@@ -105,4 +109,4 @@ UrbanNav is an Open-Sourcing Localization Dataset Collected in Asian Urban Canyo
 
 
 ## Limitations:
-   The filter has not been tuned to predict position, velocity and acceleration along z-axis (altitude). 
+   The filter was not tuned to predict position, velocity, and acceleration along the z-axis (altitude). 
