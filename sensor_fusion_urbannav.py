@@ -457,10 +457,8 @@ def locator():
     
 
 if __name__ == '__main__':
-    
+    """ Initial LATLON position of the vehicle for 2020-03-14-16-45-35.bag """
     global utmOffset
-
-    ''' Initial LATLON position of the vehicle for 2020-03-14-16-45-35.bag '''
     latlonOffset = [22.3304856504,114.179539603, 12.3115594089]  
     
     utmOffset = utm.from_latlon(latlonOffset[0], latlonOffset[1]) # Gives offset to subtract away from gps
