@@ -536,5 +536,3 @@ if __name__ == '__main__':
         locator()
     except rospy.ROSInterruptException:
         pass
-
-
