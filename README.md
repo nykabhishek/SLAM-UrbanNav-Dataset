@@ -12,7 +12,7 @@
 
 ## Data used:
 
-### [UrbanNav Dataset](https://www.polyu-ipn-lab.com/download) Details 
+### [UrbanNav Dataset](https://www.polyu-ipn-lab.com/download):
 
 UrbanNav is an Open-Sourcing Localization Dataset collected in Asian Urban Canyons, including Tokyo and Hong Kong. The dataset was developed to aid in solving the challenging problem of positioning and localization in deep urban canyons using low-cost sensors. The accuracy of GNSS is severely challenged in urban canyons due to the high-rising buildings, leading to numerous Non-line-of-sight (NLOS) receptions and multipath effects. Moreover, the excessive dynamic objects can also distort the performance of LiDAR and the camera. The dataset includes sensor measurements from GNSS receiver, LiDAR, camera, and IMU, together with accurate ground truth from [SPAN-CPT](https://novatel.com/products/span-gnss-inertial-navigation-systems) system. 
 
