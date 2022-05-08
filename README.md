@@ -53,10 +53,10 @@
 
 ## Sensor topics used:
 
-  - /imu/data 
-  - /aft_mapped_to_init 
-  - /navsat/fix
-  - /novatel_data/inspvax
+  - `/imu/data`
+  - `/aft_mapped_to_init` 
+  - `/navsat/fix`
+  - `/novatel_data/inspvax`
 
 
 ### Steps:
