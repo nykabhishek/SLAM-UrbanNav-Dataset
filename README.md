@@ -2,13 +2,13 @@
 
 ## Kalman Filter details:
 
-  - Number of states tracked: 13 
+  - Number of states tracked: `13` 
   - (3 positions, 3 velocities, 3 accelerations and 4 quaternion orientations)
-  - State Vector: [x, y, z, vx, vy, vz, ax, ay, az, qx, qy, qz, qw]
-    - Position states : (x, y, z)
-    - Velocity States : (vx, vy, vz)
-    - Acceleration States : (ax, ay, az)
-    - Quaternion States: (qx, qy, qz, qw)
+  - State Vector: `[x, y, z, vx, vy, vz, ax, ay, az, qx, qy, qz, qw]`
+    - Position states : `(x, y, z)`
+    - Velocity States : `(vx, vy, vz)`
+    - Acceleration States : `(ax, ay, az)`
+    - Quaternion States: `(qx, qy, qz, qw)`
 
 ## Data used:
 
