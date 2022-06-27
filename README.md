@@ -1,4 +1,5 @@
-# Simultaneous Localization and Mapping (SLAM) in crowded urban environments by fusing Lidar, IMU, GPS, Odometry, and SPAN-CPT data.
+# UrbanNav-SLAM 
+Simultaneous Localization and Mapping (SLAM) in crowded urban environments by fusing Lidar, IMU, GPS, Odometry, and SPAN-CPT data.
 
 [![CodeFactor](https://www.codefactor.io/repository/github/nykabhishek/slam-urbannav-dataset/badge/main)](https://www.codefactor.io/repository/github/nykabhishek/slam-urbannav-dataset/overview/main)
 
