@@ -67,7 +67,7 @@ def get_RMSE(predictions, truths):
   Returns:
     px, py, vx, vy - The RMSE of each respective DataPoint() attributes (type: float)
   """  
-  pxs, pys, vxs, vys, yaws, dyaws  = [], [], [], [], [], []
+  pxs, pys, vxs, vys, yaws, dyaws = [], [], [], [], [], []
   
   for p, t in zip(predictions, truths):
     ppx, ppy, pvx, pvy, pyaw, pdyaw = p.get()
